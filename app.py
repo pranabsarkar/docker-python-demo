@@ -5,7 +5,7 @@ from flask import Flask, request
 app = Flask(__name__)
 
 
-@app.route("/myjson", methods=["POST", "GET"])
+@app.route("/", methods=["POST", "GET"])
 def handle():
     try:
         RequestKey = request.get_json(force=True)
